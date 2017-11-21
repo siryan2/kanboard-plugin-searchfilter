@@ -3,6 +3,8 @@
         <?= t('Additional filters') ?> <i class="fa fa-caret-down"></i></a>
 
     <ul>
+        <li><?= $this->url->link(t('Reset filters'), 'DashboardController', 'show') ?></li>
+        <li class="separator"><hr></li>
         <li><a href="#" class="filter-helper" data-filter="creator:me"><?= t('Created by myself') ?></a></li>
         <li><a href="#" class="filter-helper" data-filter='creator:me color:"red task_open"'><?= t('Created by myself and task open') ?></a></li>
         <li><a href="#" class="filter-helper" data-filter='creator:me color:"blue task_in_process"'><?= t('Created by myself and task in process') ?></a></li>
