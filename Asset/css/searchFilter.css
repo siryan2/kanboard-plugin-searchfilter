@@ -1,11 +1,3 @@
-.m-r-1 {
-	margin-right: 1rem;
-}
-
-.m-l-1 {
-	margin-left: 1rem;
-}
-
 @media screen and (max-width: 849px) {
 	.additional-filters {
 		margin-top: 1rem;
@@ -18,6 +10,3 @@
 	}
 }
 
-.dropdown-submenu-open li.separator:hover {
-	background-color: transparent !important;
-}

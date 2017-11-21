@@ -1,10 +1,10 @@
-<div class="filter-box margin-bottom">
+<div class="filter-box mb-6">
     <form method="get" action="<?= $this->url->dir() ?>" class="search">
         <?= $this->form->hidden('controller', array('controller' => 'SearchController')) ?>
         <?= $this->form->hidden('action', array('action' => 'index')) ?>
 
-        <div class="clearfix" style="clear:both; overflow:hidden;">
-            <div class="input-addon" style="float:left; width:80%;">
+        <div class="clearfix overflow-hidden">
+            <div class="input-addon float-left" style="width:80%;">
                 <?= $this->form->text('search', array(), array(), array('placeholder="'.t('Search').'"'), 'input-addon-field') ?>
                 <div class="input-addon-item">
                     <?= $this->render('app/filters_helper') ?>
